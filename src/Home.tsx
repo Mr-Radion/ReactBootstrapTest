@@ -1,9 +1,9 @@
 import React from 'react';
-import { Slider } from './components';
+import { Slider, Jumbotron } from './components';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import sunset from './sunset.jpg';
 
-const cards = [1, 2, 3, 4];
+const cards = [1, 2, 3, 4, 5, 6];
 
 function Home() {
   return (
@@ -24,6 +24,24 @@ function Home() {
                 </Card>
               </Col>
             ))}
+        </Row>
+      </Container>
+      <Jumbotron />
+      <Container style={{ marginBottom: '30px' }}>
+        <Row>
+          <Col md={7}>
+            <img src={sunset} alt="sunset" height={400} />
+          </Col>
+          <Col md={5}>
+            <h2>RaDrIgIs blog</h2>
+            <p>
+              Sit sunt quis quis excepteur ex sint est est ex sit ullamco aliqua elit Lorem. Dolore
+              Lorem velit velit excepteur sit eu occaecat est. Officia et elit sint fugiat
+              consequat. Amet officia Lorem adipisicing ad deserunt qui exercitation eiusmod dolor
+              exercitation officia et. Tempor duis proident est laborum consequat non dolor esse
+              sint ea amet.
+            </p>
+          </Col>
         </Row>
       </Container>
     </>
