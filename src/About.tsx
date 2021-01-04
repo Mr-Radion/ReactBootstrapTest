@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Jumbotron } from './components';
 
 function About() {
   return (
-    <div>
-      Page About
-    </div>
-  )
+    <>
+      <h1>Page About</h1>
+      <Jumbotron />
+    </>
+  );
 }
 
-export default About
+export default About;

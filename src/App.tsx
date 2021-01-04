@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Button } from 'react-bootstrap';
-import { NaviBar } from './components';
+import { NaviBar, Footer } from './components';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
@@ -16,6 +16,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/users" component={Users} />
       </Switch>
+      <Footer />
     </>
   );
 }
